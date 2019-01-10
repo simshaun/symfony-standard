@@ -21,6 +21,6 @@ class DefaultControllerTest extends WebTestCase
 
         $client->request('POST', '/', $formData);
 
-        $this->assertTrue($client->getResponse()->getContent());
+        $this->assertContains('Success!', $client->getResponse()->getContent());
     }
 }

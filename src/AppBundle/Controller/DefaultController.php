@@ -22,8 +22,7 @@ class DefaultController extends Controller
 
         if ($form->isSubmitted()) {
             if ($form->isValid()) {
-                dump($product);
-                exit;
+                return new Response('Success! No errors.');
             }
 
             print_r("\nNum errors: ".count($form->getErrors(true)));

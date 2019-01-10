@@ -4,5 +4,5 @@ namespace AppBundle;
 
 class ProductFeature
 {
-    public $arrayOfData = [];
+    public $settings = [];
 }
